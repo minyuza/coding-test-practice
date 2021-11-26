@@ -13,3 +13,16 @@ def d(num):
             result += int(num_to_str[i])
 
     return result
+
+
+m = []
+for i in range(10000):
+    if d(i) <= 10000:
+        m.append(d(i))
+
+m = sorted(m)
+for i in range(1, 10001):
+    if i in m:
+        pass
+    else:
+        print(i)
